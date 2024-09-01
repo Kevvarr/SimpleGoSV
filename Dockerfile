@@ -10,8 +10,8 @@ RUN go mod download
 
 COPY Program/ ./
 
-RUN go build -o sv.go
+RUN go build -o sv.exe sv.go
 
 EXPOSE 2020
 
-CMD ["./sv"]
+CMD ["./sv.exe"]
