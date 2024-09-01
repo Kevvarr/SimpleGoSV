@@ -1,0 +1,11 @@
+version : '1'
+
+services:
+  golangCont:
+    container_name: golang_name
+    
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+        - 8080:8080
