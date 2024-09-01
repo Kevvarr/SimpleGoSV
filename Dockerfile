@@ -12,6 +12,6 @@ COPY Program/ ./
 
 RUN go build -o sv.go
 
-EXPOSE 8080
+EXPOSE 2020
 
 CMD ["./sv"]
