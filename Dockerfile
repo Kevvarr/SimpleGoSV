@@ -4,7 +4,7 @@ from golang:1.23.0-bookworm
 #assign work directory
 WORKDIR /app
 
-COPY go.mod ./
+COPY Program/go.mod ./
 
 RUN go mod download
 
